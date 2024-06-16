@@ -22,7 +22,7 @@ Python, being the medium of conversation between us and the machine learning mod
 - Logic / Control Flow
 - Working with External Libraries
 - 
-- ... <i><b>and the list goes on !!!<b/></i>
+- ... <i><b>and the list goes on !!!</b></i>
 <br>
 
 This notebook, in particular, should give you a good kickstart by making you brush up your <i>Python</i> basics. Here, you will also be going to play with the functions (<i>methods</i>) of <b>[Numpy](https://numpy.org/doc/stable/index.html#)</b> - <i>"The fundamental package for scientific computing in Python"</i>, which shall give you the initial taste of <b>[Data Pre-processing](https://towardsdatascience.com/introduction-to-data-preprocessing-in-machine-learning-a9fa83a5dc9d)</b>. You will also experience the *"ease-of-formulating"* of complex mathematical functions using inbuilt <i>numpy</i> objects and methods. 
