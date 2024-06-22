@@ -41,3 +41,63 @@ Lastly, you will have **[Optuna](https://optuna.org/)** - *"Optuna is an open-so
 
 ### **[Python - Data Analysis and Preprocessing](https://github.com/sricks404/Machine-Learning/blob/main/Python%20-%20Data%20Analysis%20%26%20Preprocessing.ipynb) 👇**
 <br>
+
+Now that you are done grasping some knowledge about how to use some of the essential python libraries, it's time to hit the playground to play with datasets. 
+
+> NOTE : The notebooks were run in `google colab environment`. If you want to try the same, just copy paste the below code in the starting cell of your notebook 🔻<br>
+
+~~~
+from google.colab import drive
+drive.mount('/content/drive')
+~~~
+<br>
+
+In this notebook, one of the most famous datasets has been used for the purpose of data analysis and preprocessing - <b>[penguins dataset](https://www.kaggle.com/code/parulpandey/penguin-dataset-the-new-iris)</b><br>
+
+Data Preprocessing steps include 🔻<br>
+
+- Handling Missing Entries<br>
+- Handling Mismatched String Formats<br>
+- Handling Outliers<br>
+- Detecting and Managing Outliers within the dataset<br>
+- Identifying Uncorrelated / Unrelated Features<br>
+- Converting Features with String Datatypes to Categorical<br>
+- Normalizing Non-Categorical Features<br>
+
+> NOTE : It's always a good practice to export / save the preprocessed data because many a times, you shall be building your machine learning models in a separate notebook. As data preprocessing, if done on a huge dataset, consumes a significant amount of compute resources, thus ,a separate session shall be required for model building, training and evaluation.
+
+<br>
+<br>
+
+### **[Data Analysis - Logistic Regression](https://github.com/sricks404/Machine-Learning/blob/main/Data%20Analysis%20-%20Logistic%20Regression.ipynb) 👇**<br>
+
+Here, you will be encountering one of the first machine learning algorithm used in this repo - [logistic regression](https://www.geeksforgeeks.org/understanding-logistic-regression/). The dataset used is the preprocessed version of `penguins` dataset, whose original version was used for data analysis and preprocessing in the previous notebook.<br>
+
+Below are the steps taken for training and evaluation of logistic regression model 🔻<br>
+
+- Importing required libraries
+- Loading the preprocessed dataset
+- Choosing the target feature <b>(`y`)</b>
+- Creating the data matrices for input data <b>(`X`)</b> and target data <b>(`y`)</b>
+- Dividing the dataset into training and testing components
+- Printing the shapes of the divided data components to confirm successful division
+- Designing and implementing "logistic regression" model (according to the underlying mathematical formula and functions)
+- Model Training
+- Saving the weights of the model, which gave the  highest accuracy <i>(The evaluation metric can be changed according to your needs - especially te type of algorithm you chose and the type of problem you are solving)</i>
+- Making prediction on <i>test dataset</i>
+- Plotting the loss graph and printing out the loss values over each iteration<br>
+
+> NOTE : When you try to save the weights of the model (either as a pickle `(.pkl)` file or as  HDF5 `(.h5)` file), make sure it can be successfully loaded again, say, for <i>model deployment</i>.
+
+<br>
+<br>
+
+### **[Data Analysis - Linear Regression](https://github.com/sricks404/Machine-Learning/blob/main/Data%20Analysis%20-%20Linear%20Regression.ipynb) 👇**<br>
+
+
+
+
+
+
+
+
