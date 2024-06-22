@@ -12,6 +12,7 @@ Welcome to my <b>`Machine Learning`</b> repository. Here, I will talk about some
 
 Let us now go over the notebooks mentioned here. <i>For your information, the <u>sequence</u> below is organized by increasing levels of complexity of the work done in each notebook.</i>
 <br>
+<br>
 
 ### **[Python - Data Analysis - Basics](https://github.com/sricks404/Machine-Learning/blob/main/Python%20-%20Daya%20Analysis%20-%20Basics.ipynb)** 👇<br>
 
@@ -39,8 +40,7 @@ Lastly, you will have **[Optuna](https://optuna.org/)** - *"Optuna is an open-so
 <br>
 <br>
 
-### **[Python - Data Analysis and Preprocessing](https://github.com/sricks404/Machine-Learning/blob/main/Python%20-%20Data%20Analysis%20%26%20Preprocessing.ipynb) 👇**
-<br>
+### **[Python - Data Analysis and Preprocessing](https://github.com/sricks404/Machine-Learning/blob/main/Python%20-%20Data%20Analysis%20%26%20Preprocessing.ipynb) 👇**<br>
 
 Now that you are done grasping some knowledge about how to use some of the essential python libraries, it's time to hit the playground to play with datasets. 
 
@@ -94,6 +94,36 @@ Below are the steps taken for training and evaluation of logistic regression mod
 
 ### **[Data Analysis - Linear Regression](https://github.com/sricks404/Machine-Learning/blob/main/Data%20Analysis%20-%20Linear%20Regression.ipynb) 👇**<br>
 
+This notebook will tell you how to implement <b>[Linear Regression](https://www.ibm.com/topics/linear-regression#:~:text=Linear%20regression%20analysis%20is%20used,is%20called%20the%20independent%20variable.)</b> model from scratch, using the [Ordinary Least Square (OLS)](https://medium.com/@VitorCSampaio/understanding-ordinary-least-squares-ols-the-foundation-of-linear-regression-1d79bfc3ca35) method to <i>perform direct minimization of the squared loss function</i>. For this notebook, we will consider the preprocessed data obtained from the second part o fthe notebook - [Python - Data Analysis and Preprocessing](https://github.com/sricks404/Machine-Learning/blob/main/Python%20-%20Data%20Analysis%20%26%20Preprocessing.ipynb).<br>
+
+Below are the steps followed 🔻
+
+- Importing required libraries
+- Loading the preprocessed dataset
+		▶️ <i>If you think that the dataset is still not clean, you can again apply [data preprocessing techniques](https://github.com/sricks404/Machine-Learning/blob/main/Python%20-%20Data%20Analysis%20%26%20Preprocessing.ipynb) to make it useful.</i>
+- 	Choosing the target feature <b>(`y`)</b>
+- Creating the data matrices for input data <b>(`X`)</b> and target data <b>(`y`)</b>
+- Dividing the dataset into training and testing components
+- Printing the shapes of the divided data components to confirm successful division / splitting
+- Calculating weights of the OLS equation
+- Obtaining predictions and Calculating the sum of squared errors
+- Plotting the `predictions Vs actual target feature values` graph
+<br>
+
+<i>In the later stage of this notebook, you will also observe the model implementation for <b>[Ridge Regression](https://www.ibm.com/topics/ridge-regression)</b>, including all the steps mentioned above.</i>
+<br>
+
+> NOTE : [scikit-learn](https://scikit-learn.org/stable/) or any other python library, that contain in-built models, were deliberately not used, just to give a clear idea how mathematically these algorithms can be / are implemented.
+
+<br>
+
+### **[Exploratory Data Analysis (EDA) - Regression](https://github.com/sricks404/Machine-Learning/blob/main/Exploratory%20Data%20Analysis%20(EDA)%20-%20Regression.ipynb) 👇**<br>
+
+
+
+
+ 
+ 
 
 
 
