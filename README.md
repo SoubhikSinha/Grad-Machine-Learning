@@ -67,7 +67,7 @@ Data Preprocessing steps include 🔻<br>
 > NOTE : It's always a good practice to export / save the preprocessed data because many a times, you shall be building your machine learning models in a separate notebook. As data preprocessing, if done on a huge dataset, consumes a significant amount of compute resources, thus ,a separate session shall be required for model building, training and evaluation.
 
 <br>
-<br>
+
 
 ### **[Data Analysis - Logistic Regression](https://github.com/sricks404/Machine-Learning/blob/main/Data%20Analysis%20-%20Logistic%20Regression.ipynb) 👇**<br>
 
@@ -90,7 +90,7 @@ Below are the steps taken for training and evaluation of logistic regression mod
 > NOTE : When you try to save the weights of the model (either as a pickle `(.pkl)` file or as  HDF5 `(.h5)` file), make sure it can be successfully loaded again, say, for <i>model deployment</i>.
 
 <br>
-<br>
+
 
 ### **[Data Analysis - Linear Regression](https://github.com/sricks404/Machine-Learning/blob/main/Data%20Analysis%20-%20Linear%20Regression.ipynb) 👇**<br>
 
