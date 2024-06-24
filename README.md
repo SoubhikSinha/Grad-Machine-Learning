@@ -164,6 +164,5 @@ As this was a "<i>Regression</i>" problem, the evaluation metrics used to measur
  - [R<sup>2</sup> - score (R-squared Score)](https://www.freecodecamp.org/news/what-is-r-squared-r2-value-meaning-and-definition/#:~:text=R%2DSquared%20values%20range%20from,50%25%2C%20and%20so%20on.)
  - [MAE (Mean Absolute Error)](https://medium.com/@m.waqar.ahmed/understanding-mean-absolute-error-mae-in-regression-a-practical-guide-26e80ebb97df)
 <br>
-<br>
 
 ### **[PyTorch - Neural Network (NN)](https://github.com/sricks404/Machine-Learning/blob/main/PyTorch%20-%20Neural%20Network%20(NN).ipynb) 👇**<br>
