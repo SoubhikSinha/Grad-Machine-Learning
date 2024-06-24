@@ -119,15 +119,51 @@ Below are the steps followed 🔻
 
 ### **[Exploratory Data Analysis (EDA) - Regression](https://github.com/sricks404/Machine-Learning/blob/main/Exploratory%20Data%20Analysis%20(EDA)%20-%20Regression.ipynb) 👇**<br>
 
+The content of this notebook constitute as one of the major component of the project - <u>***Suicide Rate Projection : A Holistic Approach with Mental Health Insights***</u>. This project was based on the prediction of suicide rate, accounting features like gender, age and mental health conditions, at a national level - by considering data from 100+ countries, encompassing numerous mental disorders. 
+
+>NOTE : Even though the steps of *[EDA (Exploratory Data Analysis)](https://www.ibm.com/topics/exploratory-data-analysis)* are pretty general; it's up to you whether you want to divide a single step into multiple sub-steps or not.
 
 
+Following were the techniques of EDA (Exploratory Data Analysis) incorporated🔻<br>
 
- 
- 
+ - [Data Uniformity](https://towardsdatascience.com/data-uniformity-in-data-science-9bec114fbfae)
+ - [Filling the Missing Values](https://www.analyticsvidhya.com/blog/2021/05/dealing-with-missing-values-in-python-a-complete-guide/)
+ - Removing Differences in String Values - [Capitalizing String Values of a Feature](https://www.geeksforgeeks.org/string-capitalize-python/)
+ - [Filling the Missing Values of the Columns that have Categorical Values (<i>using K-NN</i>)](https://machinelearningmastery.com/knn-imputation-for-missing-values-in-machine-learning/)
+ -  [Removing unwanted Columns using Corelation Matrix (<i>Feature Selection</i>)](https://towardsdatascience.com/feature-selection-with-pandas-e3690ad8504b)
+ - [One-Hot Encoding](https://www.geeksforgeeks.org/ml-one-hot-encoding/)
+ - [Setting Precision](https://www.geeksforgeeks.org/precision-handling-python/)
+ - [Dataset Statistics](https://www.w3schools.com/python/pandas/ref_df_describe.asp#:~:text=The%20describe()%20method%20returns,The%20average%20(mean)%20value.)
+ - [Detecting Outliers](https://www.geeksforgeeks.org/detect-and-remove-the-outliers-using-python/)
+ - [Dataset Normalization](https://machinelearningmastery.com/standardscaler-and-minmaxscaler-transforms-in-python/)
+ - Merging Columns with Proportionality Preservation
+ -  Data Visualization🔻
+	 - <i>"[Dist Plot](https://seaborn.pydata.org/generated/seaborn.distplot.html)</i>"
+	 - <i>"[Scatter Plot](https://seaborn.pydata.org/generated/seaborn.scatterplot.html)"</i>
+	 - <i>"[Histogram](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html)"</i>
+	 - <i>"[Line Plot - Regression Plot](https://seaborn.pydata.org/generated/seaborn.regplot.html)"</i>
+	 - <i>"[Violin Plot](https://seaborn.pydata.org/generated/seaborn.violinplot.html)"</i>
+	 - <i>"[Joint Plot](https://seaborn.pydata.org/generated/seaborn.jointplot.html)"</i>
+	 - <i>"[lmplot](https://seaborn.pydata.org/generated/seaborn.lmplot.html)"</i>
+<br>
 
+Below were the algorithms used for the [predictive analysis](https://www.ibm.com/topics/predictive-analytics)🔻
 
+ - [Linear Regression](https://www.ibm.com/topics/linear-regression#:~:text=Linear%20regression%20analysis%20is%20used,is%20called%20the%20independent%20variable.)
+ - [K-NN (K-Nearest Neighbour) Regression](https://www.ibm.com/topics/knn#:~:text=The%20k%2Dnearest%20neighbors%20(KNN,used%20in%20machine%20learning%20today.))
+ - [ANN (Artificial Neural Network)](https://www.geeksforgeeks.org/artificial-neural-networks-and-its-applications/)
+ - [Gradient Boosting (XGBoost - XGBRegressor)](https://machinelearningmastery.com/xgboost-for-regression/)
+ - [Decision Tree Regression](https://scikit-learn.org/stable/auto_examples/tree/plot_tree_regression.html)
+ - [Random Forest Regression](https://towardsdatascience.com/random-forest-regression-5f605132d19d)
+<br>
 
+As this was a "<i>Regression</i>" problem, the evaluation metrics used to measure the performance of the models were different from those, used in "<i>classification</i>". Here, the metrics used were🔻
 
+ - [MSE (Mean Squared Error)](https://www.geeksforgeeks.org/mean-squared-error/)
+ - [RMSE (Root Mean Squared Error)](https://c3.ai/glossary/data-science/root-mean-square-error-rmse/)
+ - [R<sup>2</sup> - score (R-squared Score)](https://www.freecodecamp.org/news/what-is-r-squared-r2-value-meaning-and-definition/#:~:text=R%2DSquared%20values%20range%20from,50%25%2C%20and%20so%20on.)
+ - [MAE (Mean Absolute Error)](https://medium.com/@m.waqar.ahmed/understanding-mean-absolute-error-mae-in-regression-a-practical-guide-26e80ebb97df)
+<br>
+<br>
 
-
-
+### **[PyTorch - Neural Network (NN)](https://github.com/sricks404/Machine-Learning/blob/main/PyTorch%20-%20Neural%20Network%20(NN).ipynb) 👇**<br>
