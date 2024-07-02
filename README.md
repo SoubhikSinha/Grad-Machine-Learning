@@ -166,3 +166,73 @@ As this was a "<i>Regression</i>" problem, the evaluation metrics used to measur
 <br>
 
 ### **[PyTorch - Neural Network (NN)](https://github.com/sricks404/Machine-Learning/blob/main/PyTorch%20-%20Neural%20Network%20(NN).ipynb) 👇**<br>
+
+This notebook has 2 parts - The first one goes with the explanation and implementation of a [Neural Network](https://www.ibm.com/topics/neural-networks) using [PyTorch](https://pytorch.org/) framework. The second part shows how to optimize the Neural Network on the basis of various hyperparameters. Below are the steps taken for the prediction🔻<br><br>
+***Part 1 : Building a Basic Neural Network*** 🔽<br>
+ - Loading the Dataset and examining Main Statistics
+	 - Correlation Matrix (heatmap) - for numerical attributes / features
+	 - Boxplot for the numerical attribute (`f3`)
+	 - [Pairplot](https://seaborn.pydata.org/generated/seaborn.pairplot.html) for feature (`f3`) with the target feature
+
+ - Preprocessing and Splitting the Dataset
+	- Handling missing values
+	- Handling outliers using BoxPlots, [IQR (Inter Quartile Range)](https://statisticsbyjim.com/basics/interquartile-range/) and mean
+	- Data Visualizations🔻
+		 - Correlation Matrix (Heatmap)
+		 - Histogram
+		 - Pairplot
+
+	- Converting categorical values to numerical values ([One-Hot Encoding](https://www.geeksforgeeks.org/ml-one-hot-encoding/))
+	- Data Normalization using [StandardScaler (Scikit-learn)](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
+	- Splitting dataset into train, validation and test components - [train_test_split(Scikit-Learn)](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
+<br>
+
+ - Defining the Neural Network<br>
+	>  NOTE : PyTorch is deliberately used instead of TensorFlow, Keras, or Scikit-learn because it allows you to understand the underlying structure of how a neural network is formed. This provides significant flexibility, experimentation opportunities, debugging capabilities, and performance benefits.
+
+<br>
+
+ - Training, Validation and Testing of the Neural Network
+ 
+	 - Setting the no. of [epochs](https://www.simplilearn.com/tutorials/machine-learning-tutorial/what-is-epoch-in-machine-learning) and [batch size](https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/)
+	 - Setting the criterion ([loss function](https://www.datacamp.com/tutorial/loss-function-in-machine-learning)), optimizer and learning rate
+	 - Creating Dataloaders
+	 - Storing the training and validation - *accuracy* and *loss* values for every epoch
+	 -  Testing the model and recording the score of evaluation metrics🔻
+ 
+		 - Accuracy
+		 - Precision
+		 - F1 score
+		 - Recall (Sensitivity)
+<br>
+
+ - [Saving the weights](https://pytorch.org/tutorials/beginner/saving_loading_models.html) of the trained, validated and tested model<br>
+ - Visualizing the results🔻
+	 - [Confusion matrices](https://www.analyticsvidhya.com/blog/2020/04/confusion-matrix-machine-learning/#:~:text=A%20Confusion%20matrix%20is%20an,by%20the%20machine%20learning%20model.) (heatmap)
+	 - [ROC Curve](https://medium.com/@shaileydash/understanding-the-roc-and-auc-intuitively-31ca96445c02)
+	 - Comparative visualization on training, validation and testing accuracy scores
+	 - Comparative visualization on training, validation and testing loss values
+ <br><br>
+
+***Part 2 : Optimizing the Neural Network*** 🔽<br>
+
+ - Choosing the hyperparameters to optimize the Neural Network🔻
+	- [Dropout rate](https://spotintelligence.com/2023/08/15/dropout-in-neural-network/#:~:text=The%20dropout%20rate%20typically%20ranges,to%20the%20computation%20of%20activations.)
+	- [Optimizer](https://ml-cheatsheet.readthedocs.io/en/latest/optimizers.html#:~:text=They%20tie%20together%20the%20loss,by%20futzing%20with%20the%20weights.)
+	- [Activation Function](https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6)
+	- [Initializer](https://machinelearningmastery.com/weight-initialization-for-deep-learning-neural-networks/)
+<br>
+
+ - Various other methods employed for optimization🔻
+ 	 - [Early Stopping](https://machinelearningmastery.com/early-stopping-to-avoid-overtraining-neural-network-models/)
+ 	 - [K-Fold](https://machinelearningmastery.com/k-fold-cross-validation/)
+ 	 - [Learning Rate Scheduler](https://machinelearningmastery.com/using-learning-rate-schedule-in-pytorch-training/)
+ 	 - Introdution of  [Batch Normalization](https://towardsdatascience.com/batch-norm-explained-visually-how-it-works-and-why-neural-networks-need-it-b18919692739)
+ 	<br>
+ - Obtaining the visualization results
+ 
+*`Via the abovementioned steps, one can easily compare and conclude by declaring which model setup (base model or one among the optimized models) is superior / dominant`.*
+
+<br>
+
+### **[PyTorch - Convolutional Neural Network (CNN)](https://github.com/sricks404/Grad-Machine-Learning/blob/main/PyTorch%20-%20Convolutional%20Neural%20Network%20(CNN).ipynb) 👇**
