@@ -227,7 +227,7 @@ This notebook has 2 parts - The first one goes with the explanation and implemen
  	 - [Early Stopping](https://machinelearningmastery.com/early-stopping-to-avoid-overtraining-neural-network-models/)
  	 - [K-Fold](https://machinelearningmastery.com/k-fold-cross-validation/)
  	 - [Learning Rate Scheduler](https://machinelearningmastery.com/using-learning-rate-schedule-in-pytorch-training/)
- 	 - Introdution of  [Batch Normalization](https://towardsdatascience.com/batch-norm-explained-visually-how-it-works-and-why-neural-networks-need-it-b18919692739)
+ 	 - Introduction of  [Batch Normalization](https://towardsdatascience.com/batch-norm-explained-visually-how-it-works-and-why-neural-networks-need-it-b18919692739)
  	<br>
  - Obtaining the visualization results
  
