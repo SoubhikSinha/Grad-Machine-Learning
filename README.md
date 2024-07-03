@@ -235,4 +235,71 @@ This notebook has 2 parts - The first one goes with the explanation and implemen
 
 <br>
 
-### **[PyTorch - Convolutional Neural Network (CNN)](https://github.com/sricks404/Grad-Machine-Learning/blob/main/PyTorch%20-%20Convolutional%20Neural%20Network%20(CNN).ipynb) 👇**
+### **[PyTorch - Convolutional Neural Network (CNN)](https://github.com/sricks404/Grad-Machine-Learning/blob/main/PyTorch%20-%20Convolutional%20Neural%20Network%20(CNN).ipynb) 👇**<br>
+
+This is in continuation to the [previous notebook](https://github.com/sricks404/Grad-Machine-Learning/blob/main/PyTorch%20-%20Neural%20Network%20(NN).ipynb) - thus, should be considered as Part 3. In this notebook, you will be observing how to build a [Convolutional Neural Network (CNN)](https://www.geeksforgeeks.org/introduction-convolution-neural-network/) model using the PyTorch framework. The dataset considered here is a subset taken from [MNIST dataset](http://yann.lecun.com/exdb/mnist/). In Part 4, a CNN architecture, [VGGNet - 11](https://medium.com/@siddheshb008/vgg-net-architecture-explained-71179310050f), is implemented. Below are the steps taken for model implementation🔻<br><br>
+
+***Part 3 : Building a CNN*** 🔽<br>
+- Loading, preprocessing, analyzing, visualizing and preparing the dataset for training
+	 - One Hot Encoding
+	 - [Image Normalization](https://medium.com/@shoaibrashid/what-is-image-normalization-d8305bf328c0)
+	 - Obtaining `Main Statistics`
+	 - Data Visualization🔻
+		 - Data Distribution among classes
+		 - Histogram for Pixel Intensities
+	
+	 - Creating Training, Validation and Testing components - using `train_test_split()`
+ 
+- Building and Training basic CNN architecture<br>
+   > NOTE : Here, we have considered a maximum of 10 hidden layers, just to keep the model complexity upto a limit. Also, you can observe how [CUDA - GPU](https://developer.nvidia.com/cuda-gpus) is used as a hardware accelerator to expediate the CNN's training process. Below is a code snippet to give you an idea on how to use GPU in Machine Learning models🔻
+
+    ~~~
+	# Checking if a GPU (cuda) is available, and setting the device accordingly
+	device  =  "cuda" if torch.cuda.is_available() else "cpu"
+
+	# Printing the selected device
+	print("Selected device:", device)
+
+	# Defining the CNN architecture
+	class SelfCNN(nn.module):
+		.
+		.
+		.
+		
+	# Initializing the model
+	num_classes = 36
+	model = SelfCNN(num_classes).to(device)
+
+	# Printing the model summary
+	print(model)
+    ~~~
+
+ - Model Training
+	- Creation of Dataloaders
+	- Setting criterion and optimizer
+	- Model Tuning methods used🔻
+		- Early Stopping (patience = )
+		- Learning Rate Scheduler
+	- Recording Training and Validation - Accuracy and Loss Scores for each epoch
+
+- Model Teesting
+	- Evaluation Metrics Used🔻
+		- Accuracy
+		- Precision
+		- F1-score
+		- Recall (Sensitivity)
+
+- Saving the weights of the trained CNN model using PyTorch
+
+ - Visualizing the results🔻
+	 - Confusion matrices (heatmap)
+	 - ROC Curve
+	 - Comparative visualization on training, validation and testing accuracy scores
+	 - Comparative visualization on training, validation and testing loss values
+
+<br>
+
+***Part 4 : VGG-11 Implementation*** 🔽<br>
+For reference, you can refer to the research paper - [VGG Architecture](https://arxiv.org/abs/1409.1556) to observe how the VGGNet-11 (Version A) is implemented with respect to the given architecture in the paper. The model implementation, training-validation-testing stage and visualization result's code remains almost the same as CNN.<br><br>
+
+### **[CIFAR10 - Image Classification (CNN)](https://github.com/sricks404/Grad-Machine-Learning/blob/main/CIFAR10%20-%20Image%20Classifier%20(CNN).ipynb) 👇**<br>
