@@ -1,4 +1,4 @@
-# Machine Learning
+# Grad Machine Learning
 
 Hello Everyone !
 <br>
@@ -119,15 +119,187 @@ Below are the steps followed 🔻
 
 ### **[Exploratory Data Analysis (EDA) - Regression](https://github.com/sricks404/Machine-Learning/blob/main/Exploratory%20Data%20Analysis%20(EDA)%20-%20Regression.ipynb) 👇**<br>
 
+The content of this notebook constitute as one of the major component of the project - <u>***Suicide Rate Projection : A Holistic Approach with Mental Health Insights***</u>. This project was based on the prediction of suicide rate, accounting features like gender, age and mental health conditions, at a national level - by considering data from 100+ countries, encompassing numerous mental disorders. 
+
+>NOTE : Even though the steps of *[EDA (Exploratory Data Analysis)](https://www.ibm.com/topics/exploratory-data-analysis)* are pretty general; it's up to you whether you want to divide a single step into multiple sub-steps or not.
 
 
+Following were the techniques of EDA (Exploratory Data Analysis) incorporated🔻<br>
 
+ - [Data Uniformity](https://towardsdatascience.com/data-uniformity-in-data-science-9bec114fbfae)
+ - [Filling the Missing Values](https://www.analyticsvidhya.com/blog/2021/05/dealing-with-missing-values-in-python-a-complete-guide/)
+ - Removing Differences in String Values - [Capitalizing String Values of a Feature](https://www.geeksforgeeks.org/string-capitalize-python/)
+ - [Filling the Missing Values of the Columns that have Categorical Values (<i>using K-NN</i>)](https://machinelearningmastery.com/knn-imputation-for-missing-values-in-machine-learning/)
+ -  [Removing unwanted Columns using Corelation Matrix (<i>Feature Selection</i>)](https://towardsdatascience.com/feature-selection-with-pandas-e3690ad8504b)
+ - [One-Hot Encoding](https://www.geeksforgeeks.org/ml-one-hot-encoding/)
+ - [Setting Precision](https://www.geeksforgeeks.org/precision-handling-python/)
+ - [Dataset Statistics](https://www.w3schools.com/python/pandas/ref_df_describe.asp#:~:text=The%20describe()%20method%20returns,The%20average%20(mean)%20value.)
+ - [Detecting Outliers](https://www.geeksforgeeks.org/detect-and-remove-the-outliers-using-python/)
+ - [Dataset Normalization](https://machinelearningmastery.com/standardscaler-and-minmaxscaler-transforms-in-python/)
+ - Merging Columns with Proportionality Preservation
+ -  Data Visualization🔻
+	 - <i>"[Dist Plot](https://seaborn.pydata.org/generated/seaborn.distplot.html)</i>"
+	 - <i>"[Scatter Plot](https://seaborn.pydata.org/generated/seaborn.scatterplot.html)"</i>
+	 - <i>"[Histogram](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html)"</i>
+	 - <i>"[Line Plot - Regression Plot](https://seaborn.pydata.org/generated/seaborn.regplot.html)"</i>
+	 - <i>"[Violin Plot](https://seaborn.pydata.org/generated/seaborn.violinplot.html)"</i>
+	 - <i>"[Joint Plot](https://seaborn.pydata.org/generated/seaborn.jointplot.html)"</i>
+	 - <i>"[lmplot](https://seaborn.pydata.org/generated/seaborn.lmplot.html)"</i>
+<br>
+
+Below were the algorithms used for the [predictive analysis](https://www.ibm.com/topics/predictive-analytics)🔻
+
+ - [Linear Regression](https://www.ibm.com/topics/linear-regression#:~:text=Linear%20regression%20analysis%20is%20used,is%20called%20the%20independent%20variable.)
+ - [K-NN (K-Nearest Neighbour) Regression](https://www.ibm.com/topics/knn#:~:text=The%20k%2Dnearest%20neighbors%20(KNN,used%20in%20machine%20learning%20today.))
+ - [ANN (Artificial Neural Network)](https://www.geeksforgeeks.org/artificial-neural-networks-and-its-applications/)
+ - [Gradient Boosting (XGBoost - XGBRegressor)](https://machinelearningmastery.com/xgboost-for-regression/)
+ - [Decision Tree Regression](https://scikit-learn.org/stable/auto_examples/tree/plot_tree_regression.html)
+ - [Random Forest Regression](https://towardsdatascience.com/random-forest-regression-5f605132d19d)
+<br>
+
+As this was a "<i>Regression</i>" problem, the evaluation metrics used to measure the performance of the models were different from those, used in "<i>classification</i>". Here, the metrics used were🔻
+
+ - [MSE (Mean Squared Error)](https://www.geeksforgeeks.org/mean-squared-error/)
+ - [RMSE (Root Mean Squared Error)](https://c3.ai/glossary/data-science/root-mean-square-error-rmse/)
+ - [R<sup>2</sup> - score (R-squared Score)](https://www.freecodecamp.org/news/what-is-r-squared-r2-value-meaning-and-definition/#:~:text=R%2DSquared%20values%20range%20from,50%25%2C%20and%20so%20on.)
+ - [MAE (Mean Absolute Error)](https://medium.com/@m.waqar.ahmed/understanding-mean-absolute-error-mae-in-regression-a-practical-guide-26e80ebb97df)
+<br>
+
+### **[PyTorch - Neural Network (NN)](https://github.com/sricks404/Machine-Learning/blob/main/PyTorch%20-%20Neural%20Network%20(NN).ipynb) 👇**<br>
+
+This notebook has 2 parts - The first one goes with the explanation and implementation of a [Neural Network](https://www.ibm.com/topics/neural-networks) using [PyTorch](https://pytorch.org/) framework. The second part shows how to optimize the Neural Network on the basis of various hyperparameters. Below are the steps taken for the prediction🔻<br><br>
+***Part 1 : Building a Basic Neural Network*** 🔽<br>
+ - Loading the Dataset and examining Main Statistics
+	 - Correlation Matrix (heatmap) - for numerical attributes / features
+	 - Boxplot for the numerical attribute (`f3`)
+	 - [Pairplot](https://seaborn.pydata.org/generated/seaborn.pairplot.html) for feature (`f3`) with the target feature
+
+ - Preprocessing and Splitting the Dataset
+	- Handling missing values
+	- Handling outliers using BoxPlots, [IQR (Inter Quartile Range)](https://statisticsbyjim.com/basics/interquartile-range/) and mean
+	- Data Visualizations🔻
+		 - Correlation Matrix (Heatmap)
+		 - Histogram
+		 - Pairplot
+
+	- Converting categorical values to numerical values ([One-Hot Encoding](https://www.geeksforgeeks.org/ml-one-hot-encoding/))
+	- Data Normalization using [StandardScaler (Scikit-learn)](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
+	- Splitting dataset into train, validation and test components - [train_test_split(Scikit-Learn)](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
+<br>
+
+ - Defining the Neural Network<br>
+	>  NOTE : PyTorch is deliberately used instead of TensorFlow, Keras, or Scikit-learn because it allows you to understand the underlying structure of how a neural network is formed. This provides significant flexibility, experimentation opportunities, debugging capabilities, and performance benefits.
+
+<br>
+
+ - Training, Validation and Testing of the Neural Network
  
+	 - Setting the no. of [epochs](https://www.simplilearn.com/tutorials/machine-learning-tutorial/what-is-epoch-in-machine-learning) and [batch size](https://machinelearningmastery.com/difference-between-a-batch-and-an-epoch/)
+	 - Setting the criterion ([loss function](https://www.datacamp.com/tutorial/loss-function-in-machine-learning)), optimizer and learning rate
+	 - Creating Dataloaders
+	 - Storing the training and validation - *accuracy* and *loss* values for every epoch
+	 -  Testing the model and recording the score of evaluation metrics🔻
  
+		 - Accuracy
+		 - Precision
+		 - F1 score
+		 - Recall (Sensitivity)
+<br>
 
+ - [Saving the weights](https://pytorch.org/tutorials/beginner/saving_loading_models.html) of the trained, validated and tested model<br>
+ - Visualizing the results🔻
+	 - [Confusion matrices](https://www.analyticsvidhya.com/blog/2020/04/confusion-matrix-machine-learning/#:~:text=A%20Confusion%20matrix%20is%20an,by%20the%20machine%20learning%20model.) (heatmap)
+	 - [ROC Curve](https://medium.com/@shaileydash/understanding-the-roc-and-auc-intuitively-31ca96445c02)
+	 - Comparative visualization on training, validation and testing accuracy scores
+	 - Comparative visualization on training, validation and testing loss values
+ <br><br>
 
+***Part 2 : Optimizing the Neural Network*** 🔽<br>
 
+ - Choosing the hyperparameters to optimize the Neural Network🔻
+	- [Dropout rate](https://spotintelligence.com/2023/08/15/dropout-in-neural-network/#:~:text=The%20dropout%20rate%20typically%20ranges,to%20the%20computation%20of%20activations.)
+	- [Optimizer](https://ml-cheatsheet.readthedocs.io/en/latest/optimizers.html#:~:text=They%20tie%20together%20the%20loss,by%20futzing%20with%20the%20weights.)
+	- [Activation Function](https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6)
+	- [Initializer](https://machinelearningmastery.com/weight-initialization-for-deep-learning-neural-networks/)
+<br>
 
+ - Various other methods employed for optimization🔻
+ 	 - [Early Stopping](https://machinelearningmastery.com/early-stopping-to-avoid-overtraining-neural-network-models/)
+ 	 - [K-Fold](https://machinelearningmastery.com/k-fold-cross-validation/)
+ 	 - [Learning Rate Scheduler](https://machinelearningmastery.com/using-learning-rate-schedule-in-pytorch-training/)
+ 	 - Introduction of  [Batch Normalization](https://towardsdatascience.com/batch-norm-explained-visually-how-it-works-and-why-neural-networks-need-it-b18919692739)
+ 	<br>
+ - Obtaining the visualization results
+ 
+*`Via the abovementioned steps, one can easily compare and conclude by declaring which model setup (base model or one among the optimized models) is superior / dominant`.*
 
+<br>
 
+### **[PyTorch - Convolutional Neural Network (CNN)](https://github.com/sricks404/Grad-Machine-Learning/blob/main/PyTorch%20-%20Convolutional%20Neural%20Network%20(CNN).ipynb) 👇**<br>
 
+This is in continuation to the [previous notebook](https://github.com/sricks404/Grad-Machine-Learning/blob/main/PyTorch%20-%20Neural%20Network%20(NN).ipynb) - thus, should be considered as Part 3. In this notebook, you will be observing how to build a [Convolutional Neural Network (CNN)](https://www.geeksforgeeks.org/introduction-convolution-neural-network/) model using the PyTorch framework. The dataset considered here is a subset taken from [MNIST dataset](http://yann.lecun.com/exdb/mnist/). In Part 4, a CNN architecture, [VGGNet - 11](https://medium.com/@siddheshb008/vgg-net-architecture-explained-71179310050f), is implemented. Below are the steps taken for model implementation🔻<br><br>
+
+***Part 3 : Building a CNN*** 🔽<br>
+- Loading, preprocessing, analyzing, visualizing and preparing the dataset for training
+	 - One Hot Encoding
+	 - [Image Normalization](https://medium.com/@shoaibrashid/what-is-image-normalization-d8305bf328c0)
+	 - Obtaining `Main Statistics`
+	 - Data Visualization🔻
+		 - Data Distribution among classes
+		 - Histogram for Pixel Intensities
+	
+	 - Creating Training, Validation and Testing components - using `train_test_split()`
+ 
+- Building and Training basic CNN architecture<br>
+   > NOTE : Here, we have considered a maximum of 10 hidden layers, just to keep the model complexity up to a limit. Also, you can observe how [CUDA - GPU](https://developer.nvidia.com/cuda-gpus) is used as a hardware accelerator to expediate the CNN's training process. Below is a code snippet to give you an idea on how to use GPU in Machine Learning models🔻
+
+    ~~~
+	# Checking if a GPU (cuda) is available, and setting the device accordingly
+	device  =  "cuda" if torch.cuda.is_available() else "cpu"
+
+	# Printing the selected device
+	print("Selected device:", device)
+
+	# Defining the CNN architecture
+	class SelfCNN(nn.module):
+		.
+		.
+		.
+		
+	# Initializing the model
+	num_classes = 36
+	model = SelfCNN(num_classes).to(device)
+
+	# Printing the model summary
+	print(model)
+    ~~~
+
+ - Model Training
+	- Creation of Data Loaders
+	- Setting criterion and optimizer
+	- Model Tuning methods used🔻
+		- Early Stopping
+		- Learning Rate Scheduler
+	- Recording Training and Validation - Accuracy and Loss Scores for each epoch
+
+- Model Testing
+	- Evaluation Metrics Used🔻
+		- Accuracy
+		- Precision
+		- F1-score
+		- Recall (Sensitivity)
+
+- Saving the weights of the trained CNN model using PyTorch
+
+ - Visualizing the results🔻
+	 - Confusion matrices (heatmap)
+	 - ROC Curve
+	 - Comparative visualization on training, validation and testing accuracy scores
+	 - Comparative visualization on training, validation and testing loss values
+
+<br>
+
+***Part 4 : VGG-11 Implementation*** 🔽<br>
+For reference, you can refer to the research paper - [VGG Architecture](https://arxiv.org/abs/1409.1556) to observe how the VGGNet-11 (Version A) is implemented with respect to the given architecture in the paper. The model implementation, training-validation-testing stage and visualization result's code remains almost the same as CNN.<br><br>
+
+### **[CIFAR10 - Image Classification (CNN)](https://github.com/sricks404/Grad-Machine-Learning/blob/main/CIFAR10%20-%20Image%20Classifier%20(CNN).ipynb) 👇**<br>
