@@ -251,7 +251,7 @@ This is in continuation to the [previous notebook](https://github.com/sricks404/
 	 - Creating Training, Validation and Testing components - using `train_test_split()`
  
 - Building and Training basic CNN architecture<br>
-   > NOTE : Here, we have considered a maximum of 10 hidden layers, just to keep the model complexity upto a limit. Also, you can observe how [CUDA - GPU](https://developer.nvidia.com/cuda-gpus) is used as a hardware accelerator to expediate the CNN's training process. Below is a code snippet to give you an idea on how to use GPU in Machine Learning models🔻
+   > NOTE : Here, we have considered a maximum of 10 hidden layers, just to keep the model complexity up to a limit. Also, you can observe how [CUDA - GPU](https://developer.nvidia.com/cuda-gpus) is used as a hardware accelerator to expediate the CNN's training process. Below is a code snippet to give you an idea on how to use GPU in Machine Learning models🔻
 
     ~~~
 	# Checking if a GPU (cuda) is available, and setting the device accordingly
@@ -275,14 +275,14 @@ This is in continuation to the [previous notebook](https://github.com/sricks404/
     ~~~
 
  - Model Training
-	- Creation of Dataloaders
+	- Creation of Data Loaders
 	- Setting criterion and optimizer
 	- Model Tuning methods used🔻
-		- Early Stopping (patience = )
+		- Early Stopping
 		- Learning Rate Scheduler
 	- Recording Training and Validation - Accuracy and Loss Scores for each epoch
 
-- Model Teesting
+- Model Testing
 	- Evaluation Metrics Used🔻
 		- Accuracy
 		- Precision
