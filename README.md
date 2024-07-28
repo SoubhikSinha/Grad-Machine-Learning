@@ -1,3 +1,4 @@
+
 # Grad Machine Learning
 
 Hello Everyone !
@@ -303,3 +304,17 @@ This is in continuation to the [previous notebook](https://github.com/sricks404/
 For reference, you can refer to the research paper - [VGG Architecture](https://arxiv.org/abs/1409.1556) to observe how the VGGNet-11 (Version A) is implemented with respect to the given architecture in the paper. The model implementation, training-validation-testing stage and visualization result's code remains almost the same as CNN.<br><br>
 
 ### **[CIFAR10 - Image Classification (CNN)](https://github.com/sricks404/Grad-Machine-Learning/blob/main/CIFAR10%20-%20Image%20Classifier%20(CNN).ipynb) 👇**<br>
+
+The **[PyTorch](https://pytorch.org/)** documentation is a fantastic resource for gaining practical knowledge about deep learning techniques. On the PyTorch website, they offer a course called : **[Deep Learning with PyTorch : A 60 Minute Blitz](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)**, which will help you get started quickly on how to use PyTorch. which is designed to help you get started quickly with using PyTorch. The goal of this course/tutorial is to "***Train a small neural network to classify images***". There are 4 0notebooks you need to go through and run each cell of everynotebook to understand how everything works in PyTorch. I have only mentioned the last notebook - ***Training a Classifier***, to give you an idea how an **[Image Classification](https://huggingface.co/tasks/image-classification#:~:text=Image%20classification%20is%20the%20task,class%20the%20image%20belongs%20to.)** problem can be solved using CNN on a large image dataset like **[CIFAR 10](https://www.cs.toronto.edu/~kriz/cifar.html)**. Below are the steps followed in this notebook 🔽
+
+ - Load and Normalize CIFAR 10
+ - Define a Convolutional Neural Network
+ - Define a Loss Function and Optimizer
+ - Train the Network
+ - Test the Network on the Test Data
+ - ***Training on GPU***
+ - Hyperparameter Changing
+ - [Optuna](https://optuna.org/) Tuning
+<br>
+
+### **[Reinforcement Learning - SARSA - Double-Q SARSA - n-step SARSA](https://github.com/sricks404/Grad-Machine-Learning/blob/main/Reinforcement%20Learning%20-%20SARSA%20-%20Double-Q%20SARSA%20-%20n-step%20SARSA.ipynb) 👇**<br>
