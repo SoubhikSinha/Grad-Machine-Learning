@@ -318,3 +318,121 @@ The **[PyTorch](https://pytorch.org/)** documentation is a fantastic resource fo
 <br>
 
 ### **[Reinforcement Learning - SARSA - Double-Q SARSA - n-step SARSA](https://github.com/sricks404/Grad-Machine-Learning/blob/main/Reinforcement%20Learning%20-%20SARSA%20-%20Double-Q%20SARSA%20-%20n-step%20SARSA.ipynb) 👇**<br>
+
+
+**[Reinforcement Learning](https://www.geeksforgeeks.org/what-is-reinforcement-learning/#)** is a way for computers to learn how to make decisions, similar to how humans learn through experience. Imagine teaching a dog new tricks. You give it treats when it does something right and withhold treats when it doesn't. Over time, the dog learns to perform the tricks that earn it treats. Let us take an example 🔽
+<br><br>
+In the context of reinforcement learning, the "dog" is the agent, and the "tricks" are actions it can take. The "treats" are rewards it gets from the environment (which could be anything from a simple game to a complex real-world scenario) when it makes the right choices. The agent tries different actions, sees what works, and gradually learns to choose actions that maximize its rewards.
+<br>
+The Key elements in Reinforcement Learning (talking with respect to the above mentioned example) are as follows🔻
+
+ - **Agent** : The learner, like our dog, trying to figure out what to do.
+ - **Environment** : The world in which the agent operates, like the living room where the dog learns tricks.
+ - **State** : The current situation or condition in the environment, like the dog being in front of you.
+ - **Action** : The choices the agent can make, such as sitting, standing, or rolling over.
+ - **Reward** : The feedback the agent gets after taking an action, like getting a treat or a pat on the head.
+
+Through this process, the agent aims to maximize the total rewards it gets over time, learning the best actions to take in different situations. This learning approach is widely used in various applications, from game playing to robotics and even financial trading.
+<br><br>
+Now let us talk about the algorithms that you will find in this notebook 🔽
+<br><br>
+
+**[SARSA (State-Action-Reward-State-Action)](https://www.geeksforgeeks.org/sarsa-reinforcement-learning/)** 🔻
+<br>
+
+This algorithm is a is a way for a computer program (an agent) to learn how to make better decisions based on its experiences. Think of it like learning to play a new board game. Here's how it works in a more human-friendly way ⏬
+ - **State ( S )** : This is like the current position of the game pieces on the board.
+ - **Action ( A )** : The player (agent) decides what move to make next, like choosing to roll the dice or move a piece.
+ - **Reward ( R )** : After making the move, the player sees the result, such as moving closer to the goal or getting a penalty.
+ - **Next State ( S' )** : The game board changes based on the move, leading to a new situation.
+ - **Next Action ( A' )** : The player then thinks about what to do next in this new situation.
+
+In SARSA, the agent keeps track of these steps to learn what moves work best. It remembers what it did, what happened next, and how good or bad the outcome was. Over time, the agent uses this information to get better at the game.
+<br>
+<br>
+So, SARSA helps the agent learn from its own experiences, constantly improving its strategy by considering the actions it actually takes and the outcomes that follow. This way, it becomes better at choosing moves that lead to more rewards, much like how we learn to play games better by practicing and learning from our mistakes.
+<br>
+<br>
+<br>
+
+**[Double Q-SARSA](https://towardsdatascience.com/double-deep-q-networks-905dd8325412)** 🔻
+<br>
+
+This is a variant of Q-Learning that aims to reduce the overestimation bias that can occur in Q-Learning. Double Q-Learning achieves this by using two separate estimators (or Q-tables) for the action-value function. The idea is to decouple the action selection from the action evaluation to provide more accurate value estimates.
+<br>
+Double Q-Learning uses two separate Q-tables, *Q<sub>1</sub>* and *Q<sub>2</sub>* ​, to store the Q-values. During each update, it randomly chooses one of the Q-tables to update using the action value from the other table to decouple the action selection from the action evaluation. The update rule for Double Q-Learning is :
+
+ - With probability 0.5, update *Q<sub>1</sub>(S<sub>t</sub> , A<sub>t</sub>)* using  Q<sub>2</sub>​ to estimate the maximum Q-value :
+ 
+	 <i>Q<sub>1</sub>​(S<sub>t</sub>​, A<sub>t</sub>​) ← Q<sub>1</sub>​(S<sub>t​</sub>, A<sub>t</sub>​) + α[R<sub>t+1</sub> ​ +γQ<sub>2​</sub>(S<sub>t+1</sub>​, arg max<sub>a</sub> ​Q<sub>1</sub>​(S<sub>t+1</sub>​, a)) − Q<sub>1</sub>​(S<sub>t</sub>​, A<sub>t</sub>​)]</i>
+<br>
+
+ - With probability 0.5, update Q<sub>2</sub>(S<sub>t</sub>, A<sub>t</sub>) Q<sub>2</sub>​(S<sub>t</sub>​, A<sub>t</sub>​) using Q<sub>1</sub>​ to estimate the maximum Q-value :
+
+
+	<i>Q<sub>2</sub>​(S<sub>t</sub>​, A<sub>t</sub>​) ← Q<sub>2</sub>​(S<sub>t</sub>​, A<sub>t</sub>​) + α[R<sub>t+1</sub> ​+γQ<sub>1</sub>​(S<sub>t+1</sub>​, arg max<sub>a</sub>​Q<sub>2</sub>​(S<sub>t+1</sub>​, a)) − Q<sub>2</sub>​(S<sub>t​</sub>, A<sub>t</sub>​)]</i>
+	
+<br>
+
+In Double Q SARSA, a similar approach can be applied to reduce overestimation in SARSA, but instead of the maximum Q-value estimation, it would involve the Q-value updates based on the chosen actions.
+<br>
+
+The general idea is to have two action-value functions, Q<sub>1</sub>​ and <sub>Q2</sub>​, and use them alternately to update each other's estimates. This helps mitigate the problem of overestimating action values, leading to more accurate learning.
+<br>
+
+In summary, Double Q-SARSA uses two separate Q-tables to reduce overestimation bias, similar to Double Q-Learning, but within the SARSA framework where the next action is also considered in the update process.
+<br>
+<br>
+<br>
+
+**[n-step SARSA](https://medium.com/zero-equals-false/n-step-td-method-157d3875b9cb)** 🔻
+<br>
+
+n-step SARSA is a reinforcement learning algorithm that extends the SARSA method by considering multiple steps (n steps) of actions and rewards before updating the Q-value of a state-action pair. Instead of updating based on a single action and its immediate reward, n-step SARSA looks at a sequence of n actions and the cumulative rewards from those actions.
+<br>
+
+In simple terms, n-step SARSA provides a more comprehensive view of the future by considering more steps ahead, which can help the agent learn more stable and accurate value estimates. This method balances short-term and long-term planning in the agent's decision-making process.
+<br>
+<br>
+
+Now that we have an overview of the algorithms, let us dive into the notebook 🔽<br><br>
+
+**Part I : Define an RL Environment** 🔻
+<br>
+
+Here, you will see how an RL environment has been setup for the game of *"Treasure Hunt"*. You can check the first code cell of the notebook to acquire information about the actions and rewards set for the agent and environment. The goal : *Finding the treasure with the largest cumulative reward while dodging / passing over obstacles is the agent's mission.*
+<br>
+<br>
+
+**Part II : Implement SARSA** 🔻
+<br>
+
+Here, the implementation of SARSA Algorithm will be applied for the environment set in Part I.
+<br>
+<br>
+
+**Part III : Implement Double Q-Learning** 🔻
+<br>
+
+Here, the implementation of Double Q-Learning Algorithm will be applied for the environment set in Part I.
+<br>
+<br>
+
+**n-step Bootstrapping (n-step SARSA)** 🔻
+<br>
+
+In reinforcement learning, this updates value estimates using the returns from multiple future steps (n steps) instead of just one. It combines observed rewards from these steps with an estimated future value to make more informed updates. This method balances short-term and long-term planning, providing a mix of immediate feedback and future predictions for more accurate learning.
+<br>
+<br>
+
+***n-step SARSA*** is like learning from a series of moves in a game instead of just one move at a time. Imagine you're playing a board game and want to figure out the best strategy. Instead of just looking at the immediate result of your next move, you consider what happens over the next few moves.
+<br>
+
+Here’s how it works :
+
+ - **Play Multiple Moves** : The agent makes a sequence of moves, seeing the rewards and changes in the game over those steps.
+ - **Add Up the Results** : It then adds up all the rewards from these moves to get a big-picture view of how good the strategy was.
+ - **Update Strategy** : Finally, it updates its strategy based on this larger view, improving how it plays in similar situations in the future.
+<br>
+
+By looking at more than just the immediate next move, n-step SARSA helps the agent learn more effectively from its experiences.
